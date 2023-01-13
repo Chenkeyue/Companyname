@@ -81,13 +81,6 @@ body {
   .nav div.main_list ul li a:hover {
       color: #00E676;
   }
-  
-  .nav div.main_list ul li:hover{
-      background-color: rgba(0,0,0,0.50);
-      transition: background-color: 0.4s;
-
-  }
-
 
   /* Home section */
 
@@ -165,6 +158,11 @@ body {
       .nav div.media_button {
           display: block;
       }
+      .nav div.main_list ul li:hover{
+      background-color: rgba(0,0,0,0.50);
+      transition: background-color: 0.4s;
+      }
+
   }
 
 /* Animation */
