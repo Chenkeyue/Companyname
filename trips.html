@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset = "utf-8">
+    <meta name = "viewport content = " width = device-width, initial-scale = "1.0"> 
+    <meta name = "description" content = "describe the site">
+    <title>Lark-Space</title>
+    <link rel="stylesheet" href="Spacestylesheet.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trispace">
+
+<!--navbar-->
+
+
+</head>
+
+<body>
+
+<!--Navigation-->
+<nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Home</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="vehicles.html">Vehicles</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home" id="home-top">
+      
+    </section>
+    <div style="height: 1600px">
+        <!-- just to make scrolling effect possible -->
+            <h2 class="myH2">Trips</h2>
+            <h1>Mars: $39,999.99 single flight, $79,999.97 round trip, $4,999.99 per night stay
+</h1>
+            <p class="myP">Tired of the same old nine-to-five? Come relax on a deluxe spa vacation in our Martian resorts. The 24 hour triple Michelin star buffet is supplied with the freshest Mars-grown vegetables and livestock. <br>
+<h3>*Those under 21 must be chaperoned at all times in case of contact with Martian blood-leeches. These lifeforms seem to target exclusively teenagers. </h3>
+</p>
+         
+             <h1>Titan: $38,999.99 single, $77,999.97 round, $4,499.99 per night stay
+
+</h1>
+            <p class="myP">Experience the ultimate Winter Wonderland on this moon of Mars! Perfect for couples and families, Titan offer the most exquisite ice rinks and water parks! Here, you can choose to learn the hextuple figure skating jumps that not even the most accomplished athletes could achieve on Earth!  <br>
+<h3>*Travelers acknowledge and assume all responsibility for possible atmospheric poisoning.  
+ </h3>
+</p>
+
+ <h1>Moon: $9,999.99 single, $19,999.97 round, $3,999.99 per night stay
+
+
+</h1>
+            <p class="myP">An exciting trip for the entire family! You’ve never ridden a rollercoaster like the ones on the Moon! Here, we can take you higher than anywhere on Earth! It’s really as light as flying!
+ <br>
+<h3>*The company assumes no liability for any children that fly away due to lack of gravity on this trip.
+ </h3>
+</p>
+<h1>Phobos: $37,999.99 single flight, $75,999.97 round trip, $4,399.99 per night stay
+
+
+</h1>
+            <p class="myP">$100 discount for under 12! The greatest beauties of nature have been successfully replicated on this gorgeous planet! Experience uninterrupted tranquility with your friends and family on this peaceful paradise away from Earth! 
+
+ <br>
+
+</p>
+<h1>Ganymede: $49,999.99 single, $999,999.97 round, $6,999 per night stay
+</h1>
+            <p class="myP">Host of the most acclaimed and protected art exhibits, Ganymede is a moon fit for only the most dedicated connoisseurs. Enjoy exclusive access to humanity’s genius, though viewing Jupiter up close may prove even more breathtaking. A voyage to this satellite has been described as a truly transforming experience. 
+ 
+
+ <br>
+
+</p>
+
+
+
+    </div>
+<!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="space.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+  
+
+    <div class="parallax" id="trips-parallax"></div>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset = "utf-8">
+    <meta name = "viewport content = " width = device-width, initial-scale = "1.0"> 
+    <meta name = "description" content = "describe the site">
+    <title>Lark-Space</title>
+    <link rel="stylesheet" href="Spacestylesheet.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trispace">
+
+<!--navbar-->
+
+
+</head>
+
+<body>
+
+<!--Navigation-->
+<nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Home</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="vehicles.html">Vehicles</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home" id="home-top">
+      
+    </section>
+    <div style="height: fit">
+        <!-- just to make scrolling effect possible -->
+            <h2 class="myH2">Vehicles</h2>
+            <p class="myP">There is a total of 15 vehicles in the Lark-Space Inventory and these can all be categorized in 1 of 3 groups</p>
+            <h1>St Jude(Space Station):</h1>
+            <ul class="list">
+                <li>Specifically designed for both astronauts and their families</li>
+                <li>This is a space station that floats in space and is used solely for research purposes</li>
+                <li>Employees on this ship will have contracts ranging from 8 months to 36 months </li>
+                <li>Due to the extensive nature of these contracts, employees are allowed to bring their families; however, this must be discussed before the signing of their contract in order to make the correct accomidations  </li>
+                <li>This station is a permanent structure in space and transportation to and from St Jude is provided from one of the Jemison Series ships</li>
+            </ul>
+        <h1>Jemison Series(Orbital Spaceship):</h1>
+            <ul class="list">
+                <li>This ship is strictly for transportation</li>
+                <li>Used to transport astronauts straight to extraterrestrial objects, ie Mars and Titan, or to St Jude</li>
+                <li>Since this ship cannot be used for extended periods of time without touching base back on Earth, this ships aren’t used for any missions</li>
+                <li>This ship can contain a maximum of 7 people per travel</li>
+            </ul>
+        <h1>Earhart Series(Colonial Spaceships):</h1>
+            <ul class="list">
+                <li>This spaceship is used for missions to extraterrestrial objects, ie space exploration on Phobos</li>
+                <li>This spaceship is used for missions to extraterrestrial objects, ie space exploration on Phobos</li>
+                <li>This ship is powered through energy from extraterrestrial objects allowing it to travel for an indefinite amount of time</li>
+                <li>Since this ship is strictly used for missions, it must be occupied by exactly 4 people at a time </li>
+            </ul>
+            
+    </div>
+<!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="space.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+  
+
+    <div class="parallax" id="vehicles-parallax"></div>
+
+    
+
+</body>
+</html>

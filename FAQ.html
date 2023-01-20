@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset = "utf-8">
+    <meta name = "viewport content = " width = device-width, initial-scale = "1.0"> 
+    <meta name = "description" content = "describe the site">
+    <title>Lark-Space</title>
+    <link rel="stylesheet" href="Spacestylesheet.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trispace">
+
+<!--navbar-->
+
+
+</head>
+
+<body>
+
+<!--Navigation-->
+<nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Home</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="vehicles.html">Vehicles</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="references.html">Citations</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home" id="home-top">
+      
+    </section>
+    <div style="height: fit">
+        <!-- just to make scrolling effect possible -->
+            <h2 class="myH2">FAQ</h2>
+            <ul class="list">
+                <li>What will we eat? <ul><li>Technological innovations are constantly improving our menu. For an extra $1,000 on each trip, you can gain access to an unlimited buffet with food choices including but not limited to fresh sushi, caviar, kimchi, etc. </li></ul></li><br>
+                <li>Is it easy to get motion sickness on a spaceship?<ul><li>Motion sickness medicine is available at all times to all passengers, though our stabilizing techonolgies are considered first-rate in the industry. If all else fails, we have premium sturdy bile bags for anybody who may need them. </li></ul></li><br>
+                <li>What if the children fly away in low-gravity? <ul><li>For the low price of $1,999.99, you can purchase a color-customizable child protection leash to keep your offspring safe and close at all times! </li></ul></li><br>
+                <li>How is this trip so fun?</li>
+                <ul><li>Our team of experts and party-animals guarantee only the finest of experiences for our clients. Sign up for you trip now on the "Trips" page!</li>
+                    <li>*Safety and enjoyment not guaranteed. The customer assumes responsibility for all risk factors, including but not limited to alien blood-leeches, food poisoning, suffocation of small children, equipment malfunction, etc. </li></ul>
+
+            </ul>
+    </div>
+<!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="space.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+  
+
+    <div class="parallax" id="FAQ-parallax"></div>
+
+    
+
+</body>
+</html>

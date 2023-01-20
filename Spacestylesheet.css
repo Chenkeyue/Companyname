@@ -1,6 +1,6 @@
 /*Parallax*/
 .parallax{
-  background-image: url("https://thumbs.gfycat.com/GroundedNauticalBobcat-size_restricted.gif");
+  background-image: url(https://media1.giphy.com/media/3o7buijTqhjxjbEqjK/giphy.gif?cid=ecf05e47argzkmhooqoejz5h9wkqipxlqfcyy8nbdb4nnoc2&rid=giphy.gif&ct=g);
   min-height: 500px;
   background-attachment: fixed; 
   background-position: center;
@@ -8,17 +8,33 @@
   background-size: cover;
 }
 
+h1{
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
+p{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+h3{
+  margin: 5%;
+}
 
+.list{
+    text-align: left;
+    padding-left:15%;
+    padding-right:15%;
+    font-size: 20px;
+}
 
-
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Trispace:400,500,700');
 html,
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Trispace";
     font-size: 62.5%;
     font-size: 10px;
 }
@@ -86,10 +102,10 @@ body {
 
   /* Home section */
 
+  
   .home {
       width: 100%;
       height: 100vh;
-      background-image: url("https://thumbs.gfycat.com/GroundedNauticalBobcat-size_restricted.gif");
       background-position: center top;
       background-size:cover;
       background-attachment: fixed; 
@@ -98,6 +114,12 @@ body {
 
   }
 
+  #home-top{
+      background-image: url("https://media1.giphy.com/media/3o7buijTqhjxjbEqjK/giphy.gif?cid=ecf05e47argzkmhooqoejz5h9wkqipxlqfcyy8nbdb4nnoc2&rid=giphy.gif&ct=g");
+  }
+  #home-parallax{
+      background-image: url("https://thumbs.gfycat.com/GroundedNauticalBobcat-size_restricted.gif");
+  }
   .navTrigger {
       display: none;
   }
@@ -108,6 +130,8 @@ body {
       -webkit-transition: all 0.4s ease;
       transition: all 0.4s ease;
   }
+
+  /* About Section */
 
 
   /* Media query section */
@@ -367,7 +391,7 @@ body {
     font-size: 4rem;
   }
   .myP {
-    text-align: justify;
+    text-align: left;
     padding-left:15%;
     padding-right:15%;
     font-size: 20px;

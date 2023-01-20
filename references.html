@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset = "utf-8">
+    <meta name = "viewport content = " width = device-width, initial-scale = "1.0"> 
+    <meta name = "description" content = "describe the site">
+    <title>Lark-Space</title>
+    <link rel="stylesheet" href="Spacestylesheet.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trispace">
+
+<!--navbar-->
+
+
+</head>
+
+<body>
+
+<!--Navigation-->
+<nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Home</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="vehicles.html">Vehicles</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="references.html">Citations</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home" id="home-top">
+      
+    </section>
+    <div style="height: 1000px">
+        <!-- just to make scrolling effect possible -->
+            <h2 class="myH2">References and Resources</h2>
+            <p class="myP"><a href="https://media1.giphy.com/media/3o7buijTqhjxjbEqjK/giphy.gif?cid=ecf05e47argzkmhooqoejz5h9wkqipxlqfcyy8nbdb4nnoc2&rid=giphy.gif&ct=g">Homepage space gif</a></p>
+            <p class="myP"><a href="https://www.weforum.org/agenda/2020/10/nasa-xray-images-of-universe/">Helix Nebula image</a></a></p>
+            <p class="myP"><a href="https://www.vaisala.com/en/blog/2020-06/marching-out-mars-why-are-researchers-interested-red-planet">Mars Background</a></p>
+            <p class="myP">Albi</p>
+                <p class="myP">
+                
+                Insert fun things
+            </p>
+    </div>
+<!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="space.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+  
+
+    <div class="parallax" id="references-parallax"></div>
+
+    
+
+</body>
+</html>
