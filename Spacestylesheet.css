@@ -8,6 +8,16 @@
   background-size: cover;
 }
 
+#trips-parallax{
+  background-image: url(https://www.vaisala.com/sites/default/files/styles/16_9_liftup_extra_large/public/images/LIFT-Mars_3D-illustration_1600x900.jpg?itok=LXD2_eIa);
+}
+#training-parallax{
+  background-image: url(https://images.pexels.com/photos/2166/flight-sky-earth-space.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+#vehicles-parallax{
+  background-image: url(https://www.universetoday.com/wp-content/uploads/2012/01/PIA15277_3rovers-hi_D2011_1215_D511_br2.jpg);
+}
+
 h1{
   margin-left: 5%;
   margin-right: 5%;
@@ -26,6 +36,11 @@ h3{
     padding-left:15%;
     padding-right:15%;
     font-size: 20px;
+}
+
+li{
+  padding-bottom: 15px;
+  padding-top: 10px;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Trispace:400,500,700');
